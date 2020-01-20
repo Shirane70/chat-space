@@ -1,0 +1,42 @@
+.main
+  .header
+    .left-box
+      .current-group
+        s-c-group
+      .member-list
+        Member:
+        .list
+          mem1
+    .right-box
+      .edit-btn
+        Edit
+      /#=link_to "https://#/", class: "edit-btn" do
+  .middle
+    .message
+      .talker
+        sample-talker1
+        .date
+          sample-date1
+      .text
+        sample-text1
+
+    .message
+      .talker
+        sample-talker2
+        .date
+          sample-date2
+      .text
+        sample-text2
+
+  .form
+    .box
+      .text
+        %input(type="text" )
+      .image
+        %label{class:"image"}
+          = icon('fas','image') 
+          %input{type:"file"}
+    .submit-btn
+      Send
+      
+
