@@ -3,13 +3,14 @@
   .header
     .box
       .user-name
-        sample-user-name
+        = current_user.name
       .menu
         .new-group
-          %i.fa.fa-edit
-          
+          = link_to do
+            = icon('fas', 'pen-square', class: 'icon')
         .edit-account
-          %i.fa.fa-cog
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .group
     .name
       sample-group-name1
