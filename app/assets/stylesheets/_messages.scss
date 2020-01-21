@@ -56,15 +56,17 @@
     padding-left: 20px;
     padding-bottom: 40px;
   }
-  .group {
-    height: 96px;
-    width: 300px;
-    background-color:none;
-    .name{
-      @include name;
-    }
-    .latest-message{
-      @include latest-message;
+  .middle{
+    .group {
+      height: 96px;
+      width: 300px;
+      background-color:none;
+      .name{
+        @include name;
+      }
+      .latest-message{
+        @include latest-message;
+      }
     }
   }
 }
