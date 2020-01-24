@@ -43,6 +43,7 @@ $('#new_message').on('submit', function(e){
  e.preventDefault();
  var formData = new FormData(this);
  var url = $(this).attr('action')
+ 
  $.ajax({
    url: url,
    type: "POST",
@@ -55,8 +56,11 @@ $('#new_message').on('submit', function(e){
     var html = buildHTML(data);
     $('.messages').append(html);
     $('form')[0].reset();
+    $('.submit-btn').prop('disabled', false);
+    $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
   })
-  $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-
-})
+    .fail(function() {
+      alert("メッセージ送信に失敗しました");
+  });
+ })
 });
