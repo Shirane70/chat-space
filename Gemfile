@@ -34,10 +34,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
   gem 'byebug', platform: :mri
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 end
 
 group :development do
@@ -68,10 +72,3 @@ group :production do
   gem 'unicorn', '5.4.1'
 end
 
-group :development, :test do
-  gem 'capistrano'
-  gem 'capistrano-rbenv'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rails'
-  gem 'capistrano3-unicorn'
-end
