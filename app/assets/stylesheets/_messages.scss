@@ -33,11 +33,15 @@
         .new-group{
           margin-right: 5px;
           font-size: 13px;
-          color: #ffffff;
+          &:link, &:visited, &:hover, &:active {
+            color:white;
+          }
         }
         .edit-account{
-          color: #ffffff;
           font-size: 13px;
+          &:link, &:visited, &:hover, &:active {
+            color: white;
+          }
         }
       }
     }
