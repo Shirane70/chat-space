@@ -33,15 +33,12 @@
         .new-group{
           margin-right: 5px;
           font-size: 13px;
-          &:link, &:visited, &:hover, &:active {
-            color:white;
-          }
         }
         .edit-account{
           font-size: 13px;
-          &:link, &:visited, &:hover, &:active {
-            color: white;
-          }
+        }
+        .icon{
+          color: #ffffff;
         }
       }
     }
@@ -115,10 +112,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-        .edit-btn{
-          font-size: 16px;
-          color: #38afe0 ;
-        }
+      .edit-btn{
+        font-size: 16px;
+        color: #38afe0 ;
+      }
     }
   }
   .messages {
@@ -160,32 +157,32 @@
     background-color: #ddd;
     .new_message{
       display: flex;
-    .box{
-      position: relative;
-      width: 100%;
-      .form__message{
-        height: 50px;
+      .box{
+        position: relative;
         width: 100%;
-        padding: 0 40px 0 10px;
-        color: #434a54;
-        border-style: none;
-      }
-      .form__mask__image{
-        font-size: 1.3rem;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        .icon{
+        .form__message{
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+          border-style: none;
+        }
+        .form__mask__image{
           font-size: 1.3rem;
           position: absolute;
           top: 10px;
           right: 10px;
           cursor: pointer;
-        }
-        .hidden{
-          display: none;
-
+          .icon{
+            font-size: 1.3rem;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+          }
+          .hidden{
+            display: none;
+          }
         }
       }
     }
@@ -199,5 +196,4 @@
       cursor: pointer;
     }
   }
-}
 }
